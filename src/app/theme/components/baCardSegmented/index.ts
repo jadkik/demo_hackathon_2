@@ -1,0 +1,1 @@
+export * from './baCardSegmented.component';

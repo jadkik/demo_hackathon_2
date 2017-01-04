@@ -15,6 +15,428 @@ export const PAGES_MENU = [
         }
       },
       {
+        path: 'tiles',
+        data: {
+          menu: {
+            title: 'Tiles',
+            icon: 'ion-ios-more',
+            selected: false,
+            expanded: false,
+            order: 1
+          }
+        },
+        children: [
+          {
+            path: 'widgets',
+            data: {
+              menu: {
+                title: 'Widgets',
+              }
+            }
+          },
+          {
+            path: 'themes',
+            data: {
+              menu: {
+                title: 'Themes'
+              }
+            }
+          }
+        ]
+      },
+      {
+        path: 'groups',
+        data: {
+          menu: {
+            title: 'Groups',
+            icon: 'ion-ios-more',
+            selected: false,
+            expanded: false,
+            order: 2
+          }
+        },
+        children: [
+          {
+            path: 'events',
+            data: {
+              menu: {
+                title: 'Events'
+              }
+            }
+          },
+          {
+            path: 'folders',
+            data: {
+              menu: {
+                title: 'Folders'
+              }
+            }
+          },
+          {
+            path: 'categories',
+            data: {
+              menu: {
+                title: 'Categories'
+              }
+            }
+          },
+          {
+            path: 'procedures',
+            data: {
+              menu: {
+                title: 'Procedures'
+              }
+            }
+          }
+        ]
+      },
+      {
+        path: 'mobile-app',
+        data: {
+          menu: {
+            title: 'Mobile App',
+            icon: 'ion-ios-more',
+            selected: false,
+            expanded: false,
+            order: 3
+          }
+        },
+        children: [
+          {
+            path: 'pages',
+            data: {
+              menu: {
+                title: 'Pages'
+              }
+            }
+          },
+          {
+            path: 'settings',
+            data: {
+              menu: {
+                title: 'Settings'
+              }
+            }
+          },
+          {
+            path: 'user-profile',
+            data: {
+              menu: {
+                title: 'User Profile'
+              }
+            }
+          }
+        ]
+      },
+      {
+        path: 'engines',
+        data: {
+          menu: {
+            title: 'Engines',
+            icon: 'ion-ios-more',
+            selected: false,
+            expanded: false,
+            order: 4
+          }
+        },
+        children: [
+          {
+            path: 'notifications',
+            data: {
+              menu: {
+                title: 'Notifications'
+              }
+            }
+          },
+          {
+            path: 'smart',
+            data: {
+              menu: {
+                title: 'SMART'
+              }
+            }
+          },
+          {
+            path: 'end-user-roles',
+            data: {
+              menu: {
+                title: 'End User Roles'
+              }
+            }
+          },
+          {
+            path: 'in-app-membership',
+            data: {
+              menu: {
+                title: 'In-app Membership'
+              }
+            }
+          },
+          {
+            path: 'health-status-rules',
+            data: {
+              menu: {
+                title: 'Health Status Rules'
+              }
+            }
+          },
+          {
+            path: 'report-generator',
+            data: {
+              menu: {
+                title: 'Report Generator'
+              }
+            }
+          },
+          {
+            path: 'profile-builder',
+            data: {
+              menu: {
+                title: 'Profile Builder'
+              }
+            }
+          }
+        ]
+      },
+      {
+        path: 'life-stream',
+        data: {
+          menu: {
+            title: 'Life Stream',
+            icon: 'ion-ios-more',
+            selected: false,
+            expanded: false,
+            order: 5
+          }
+        },
+        children: [
+          {
+            path: 'streaming-panel',
+            data: {
+              menu: {
+                title: 'Streaming Panel'
+              }
+            }
+          },
+          {
+            path: 'stream-url',
+            data: {
+              menu: {
+                title: 'Stream URL'
+              }
+            }
+          },
+          {
+            path: 'user-access',
+            data: {
+              menu: {
+                title: 'User Access'
+              }
+            }
+          },
+          {
+            path: 'reports',
+            data: {
+              menu: {
+                title: 'Reports'
+              }
+            }
+          }
+        ]
+      },
+      {
+        path: 'analytics',
+        data: {
+          menu: {
+            title: 'Analytics',
+            icon: 'ion-ios-more',
+            selected: false,
+            expanded: false,
+            order: 6
+          }
+        },
+        children: [
+          {
+            path: 'activity-reports',
+            data: {
+              menu: {
+                title: 'Activity Reports'
+              }
+            }
+          },
+          {
+            path: 'end-users',
+            data: {
+              menu: {
+                title: 'End Users'
+              }
+            }
+          },
+          {
+            path: 'trend-reports',
+            data: {
+              menu: {
+                title: 'Trend Reports'
+              }
+            }
+          }
+        ]
+      },
+      {
+        path: 'master-controls',
+        data: {
+          menu: {
+            title: 'Master Controls',
+            icon: 'ion-ios-more',
+            selected: false,
+            expanded: false,
+            order: 7
+          }
+        },
+        children: [
+          {
+            path: 'event-triggers',
+            data: {
+              menu: {
+                title: 'Event Triggers'
+              }
+            }
+          },
+          {
+            path: 'photos',
+            data: {
+              menu: {
+                title: 'Photos'
+              }
+            }
+          },
+          {
+            path: 'videos',
+            data: {
+              menu: {
+                title: 'Videos'
+              }
+            }
+          },
+          {
+            path: 'push-notifications',
+            data: {
+              menu: {
+                title: 'Push Notifications'
+              }
+            }
+          }
+        ]
+      },
+      {
+        path: 'admin',
+        data: {
+          menu: {
+            title: 'Admin',
+            icon: 'ion-ios-more',
+            selected: false,
+            expanded: false,
+            order: 8
+          }
+        },
+        children: [
+          {
+            path: 'studio-users',
+            data: {
+              menu: {
+                title: 'Studio Users'
+              }
+            }
+          },
+          {
+            path: 'organizations',
+            data: {
+              menu: {
+                title: 'Organizations'
+              }
+            }
+          },
+          {
+            path: 'packages',
+            data: {
+              menu: {
+                title: 'Packages'
+              }
+            }
+          },
+          {
+            path: 'procedure-mapping',
+            data: {
+              menu: {
+                title: 'Procedure Mapping'
+              }
+            }
+          },
+          {
+            path: 'auth-and-security',
+            data: {
+              menu: {
+                title: 'Auth and Security'
+              }
+            }
+          },
+          {
+            path: 'studio-role-definitions',
+            data: {
+              menu: {
+                title: 'Studio Role Definitions'
+              }
+            }
+          }
+        ]
+      },
+      {
+        path: 'tools',
+        data: {
+          menu: {
+            title: 'Tools',
+            icon: 'ion-ios-more',
+            selected: false,
+            expanded: false,
+            order: 9
+          }
+        },
+        children: [
+          {
+            path: 'help',
+            data: {
+              menu: {
+                title: 'Help'
+              }
+            }
+          },
+          {
+            path: 'background-generator',
+            data: {
+              menu: {
+                title: 'Background Generator'
+              }
+            }
+          },
+          {
+            path: 'email-support',
+            data: {
+              menu: {
+                title: 'Email Support'
+              }
+            }
+          },
+          {
+            path: 'how-to-video-help',
+            data: {
+              menu: {
+                title: 'How-To Video Help'
+              }
+            }
+          }
+        ]
+      },
+      {
         path: 'editors',
         data: {
           menu: {

@@ -32,7 +32,7 @@ export class BaThemeConfigProvider {
 
   conf = {
     theme: {
-      name: 'ng2',
+      name: 'ili-studio',
     },
     colors: {
       default: this.basic.default,

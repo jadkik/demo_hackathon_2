@@ -1,0 +1,12 @@
+<div baCardBlur class="animated fadeIn card {{cardType}} {{baCardClass || ''}}" zoom-in>
+    <div *ngFor="let segment of segments">
+        <ba-segment [title]="segment.title">
+        <!-- DYNAMIC CONTENT -->
+            <div *ngIf="segment.data" style="padding-top:15px">
+                <div class="icons-list success awesomeIcons">
+                        <div class="col-xs-6" *ngFor="let item of segment.data"><i class="fa {{ item }}"></i></div>
+                </div>            
+            </div>
+        </ba-segment>
+    </div>
+</div>
