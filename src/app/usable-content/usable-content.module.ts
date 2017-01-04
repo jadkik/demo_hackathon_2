@@ -10,6 +10,8 @@ import { Tile } from './components/tile.component';
 import { Tiles } from './components/tiles.component';
 import { SelectedTiles } from './components/selected-tiles.component';
 import { Events } from './components/events.component';
+import { Folders } from './components/folders.component';
+import { Procedures } from './components/procedures.component';
 
 import { UsableContentStore } from './usableContentStore';
 import { UsableContentBackend } from './usableContentBackend.service';
@@ -26,7 +28,9 @@ import { UsableContentBackend } from './usableContentBackend.service';
         Tile,
         Tiles,
         SelectedTiles,
-        Events
+        Events,
+        Folders,
+        Procedures
     ],
     declarations: [
         UsableContentWrapper,
@@ -36,7 +40,9 @@ import { UsableContentBackend } from './usableContentBackend.service';
         Tile,
         Tiles,
         SelectedTiles,
-        Events
+        Events,
+        Folders,
+        Procedures
     ],
     providers: [
         UsableContentStore,

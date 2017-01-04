@@ -13,20 +13,17 @@
                         <!-- TODO change css -->
                         <div class="form-group row">
                                 <label for="name">Name: </label>
-                                <div [ngSwitch]="_store._selected_composite_index">
-                                        <div *ngSwitchCase="0 - 1">
-                                                <input class="form-control" [value]="" (input)="onNameSet($event.target.value)" id="name" type="text" placeholder="Enter a Name">
+                                        <div [ngSwitch]="_store._selected_composite_index">
+                                                <div *ngSwitchCase="0 - 1">
+                                                        <input class="form-control" [value]="" (input)="onNameSet($event.target.value)" id="name" type="text" placeholder="Enter a Name">
+                                                </div>
+                                                <div *ngSwitchDefault>
+                                                        <input class="form-control" [value]="_store.selected_composite.metadata.identifiers.name" (input)="onNameChange($event.target.value)" id="name" type="text" placeholder="Enter a Name">
+                                                </div>
                                         </div>
-                                        <div *ngSwitchDefault>
-                                                <input class="form-control" [value]="_store.selected_composite.metadata.identifiers.name" (input)="onNameChange($event.target.value)" id="name" type="text" placeholder="Enter a Name">
-                                        </div>
-                                </div>
                         </div>
                 </ba-card>
         </div>
-
-
-
 
 
         <div class="row">
@@ -44,14 +41,12 @@
                 </div>
 
                 <div class="col-md-3">
-                    <ba-card title="Events" baCardClass="with-scroll">
-                            <events [contentStream]="_store.composite_content" (onSelected)="onSelected($event)"></events>
+                    <ba-card title="Folders" baCardClass="with-scroll">
+                            <folders [contentStream]="_store.composite_content" (onSelected)="onSelected($event)"></folders>
                     </ba-card>     
                 </div>
 
         </div>
-
-
 
 
 </div>
