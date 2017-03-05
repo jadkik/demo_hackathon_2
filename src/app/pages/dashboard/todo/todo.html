@@ -1,6 +1,4 @@
 <div class="task-todo-container">
-  <input type="text" value="" class="form-control task-todo" placeholder="Task to do.." (keyup)="addToDoItem($event)" [(ngModel)]="newTodoText"/>
-  <i (click)="addToDoItem($event)" class="add-item-icon ion-plus-round"></i>
   <div class="box-shadow-border"></div>
 
   <ul class="todo-list">
@@ -11,7 +9,7 @@
       <i class="mark" [ngStyle]="{ 'background-color': item.color }"></i>
       <label class="todo-checkbox custom-checkbox custom-input-success">
         <input type="checkbox" [(ngModel)]="item.isChecked">
-        <span class="cut-with-dots">{{ item.text }}</span>
+        <span class="cut-with-dots" (click)="onSelectItem(item)">{{ item.text }}</span>
       </label>
       <i class="remove-todo ion-ios-close-empty" (click)="item.deleted = true"></i>
     </li>

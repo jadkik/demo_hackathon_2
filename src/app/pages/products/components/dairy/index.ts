@@ -1,0 +1,2 @@
+export * from './dairy.component';
+

@@ -1,29 +1,16 @@
 import { Routes, RouterModule }  from '@angular/router';
 import { Pages } from './pages.component';
-// noinspection TypeScriptValidateTypes
+
+
 const routes: Routes = [
-  {
-    path: 'login',
-    loadChildren: () => System.import('./login/login.module')
-  },
-  {
-    path: 'register',
-    loadChildren: () => System.import('./register/register.module')
-  },
   {
     path: 'pages',
     component: Pages,
     children: [
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'home', loadChildren: () => System.import('./home/login.module') },
       { path: 'dashboard', loadChildren: () => System.import('./dashboard/dashboard.module') },
-      { path: 'editors', loadChildren: () => System.import('./editors/editors.module') },
-      { path: 'charts', loadChildren: () => System.import('./charts/charts.module') },
-      { path: 'ui', loadChildren: () => System.import('./ui/ui.module') },
-      { path: 'forms', loadChildren: () => System.import('./forms/forms.module') },
-      { path: 'tables', loadChildren: () => System.import('./tables/tables.module') },
-      { path: 'maps', loadChildren: () => System.import('./maps/maps.module') },
-      { path: 'tiles', loadChildren: () => System.import('./tiles/tiles.module') },
-      { path: 'groups', loadChildren: () => System.import('./groups/groups.module') }
+      { path: 'products', loadChildren: () => System.import('./products/products.module') }
     ]
   }
 ];

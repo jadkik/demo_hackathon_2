@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component, ViewEncapsulation, Output, EventEmitter} from '@angular/core';
 import {BaThemeConfigProvider} from '../../../theme';
 
 import {TodoService} from './todo.service';
@@ -15,6 +15,8 @@ export class Todo {
 
   public todoList:Array<any>;
   public newTodoText:string = '';
+
+  @Output() onSelectedItem: EventEmitter<any> = new EventEmitter<any>();
 
   constructor(private _baConfig:BaThemeConfigProvider, private _todoService:TodoService) {
     this.todoList = this._todoService.getTodoList();
@@ -47,5 +49,9 @@ export class Todo {
 
     var i = Math.floor(Math.random() * (colors.length - 1));
     return colors[i];
+  }
+
+  onSelectItem(item: any) {
+          this.onSelectedItem.emit(item);
   }
 }

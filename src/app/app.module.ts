@@ -5,6 +5,9 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
 
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -43,6 +46,7 @@ type StoreType = {
   imports: [ // import Angular's modules
     BrowserModule,
     HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
